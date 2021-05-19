@@ -5,9 +5,9 @@ module.exports = {
   entry: "./lib/main.js",
   devtool: "source-map",
   output: {
-    filename: 'bbs-jxt.sdk.min.js',
+    filename: 'base32url.min.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'BBS_JXT',
+    library: 'Base32URL',
     libraryTarget: 'umd',
   },
   optimization: {

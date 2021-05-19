@@ -40,10 +40,18 @@ Input string or bytes to encode.
 
 #### Base32URL.decode(base32Str)
 
-Decode base32url string and return a byte array
+Decode Base32URL string and return a *`byte array`*
 
 ##### *base32Str: `String`*
 
-Base32 string to decode.
+Base32URL string to decode.
+
+#### Base32URL.decodeAsString(base32Str)
+
+Decode Base32URL string and return a *`string`*
+
+##### *base32Str: `String`*
+
+Base32URL string to decode.
 
 

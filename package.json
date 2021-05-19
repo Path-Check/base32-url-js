@@ -1,6 +1,6 @@
 {
   "name": "base32url.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base32 with URL-safe alphabet (thus Base32URL)",
   "scripts": {
     "test": "mocha",

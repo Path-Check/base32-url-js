@@ -26,4 +26,5 @@ const LONG_BYTE_ARRAY = [120, 156, 187, 212, 226, 187, 136, 81, 141, 197, 195, 2
 describe("Back and Forth", () => { 
     it("encode decode long byte array", () => deepStrictEqual(Base32URL.decode(Base32URL.encode(LONG_BYTE_ARRAY)), LONG_BYTE_ARRAY));
     it("encode decode string",          () => deepStrictEqual(Base32URL.decodeAsString(Base32URL.encode("This works!")), "This works!"));
+    it("encode decode string",          () => deepStrictEqual(Base32URL.decode(Base32URL.encode("This works!")), [84,104,105,115,32,119,111,114,107,115,33]));
 });

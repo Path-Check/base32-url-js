@@ -11,6 +11,13 @@
   "files": [
     "lib/*.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Path-Check/base32-url-js"
+  },
+  "bugs": {
+    "url": "https://github.com/Path-Check/base32-url-js/issues"
+  },
   "main": "lib/index.js",
   "module": "lib/main.js",
   "dependencies": {

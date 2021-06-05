@@ -28,3 +28,12 @@ describe("Back and Forth", () => {
     it("encode decode string",          () => deepStrictEqual(Base32URL.decodeAsString(Base32URL.encode("This works!")), "This works!"));
     it("encode decode string",          () => deepStrictEqual(Base32URL.decode(Base32URL.encode("This works!")), [84,104,105,115,32,119,111,114,107,115,33]));
 });
+
+const ASCII_STRING = "Organéá'dç'dé'w'sçzation%2F1832473e-2fe0-452d-abe9-3cdb9879522f/Acme$Laboratory%2C$Inc";
+
+describe("Ascii", () => { 
+    it("encode decode ascii", () => deepStrictEqual(Base32URL.decodeAsString(Base32URL.encode(ASCII_STRING)), ASCII_STRING));
+    it("encode decode ascii", () => deepStrictEqual(Base32URL.decodeAsString(Base32URL.encode(ASCII_STRING, true), true), ASCII_STRING));
+    it("encode decode ascii", () => deepStrictEqual(Base32URL.decodeAsString(Base32URL.encode(ASCII_STRING, false), false), ASCII_STRING));
+
+});

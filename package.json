@@ -20,6 +20,7 @@
   },
   "main": "lib/index.js",
   "module": "lib/main.js",
+  "react-native": "lib/main.js",
   "dependencies": {
     "esm": "^3.2.25",
     "hi-base32": "^0.5.1"
